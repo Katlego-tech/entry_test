@@ -102,7 +102,7 @@ you show you understand what that costs.
   first, and how would a tester get test ETH? (Describe it - you are not doing
   it.)
 
-[Write your response here]
+The hardest step for a first-time user is interacting with the network. If i were to deploy this, i would deploy it on Sepolia. A tester would need a Faucet wallet, and to get test ETH there are a number of ways but the easiest way i know how is to download Metamask and create a wallet then activate the Sepolia testnet. The next step would be to fund the wallet using the likes of the Google Sepolia Faucet service.
 
 ---
 
@@ -113,7 +113,9 @@ you show you understand what that costs.
 Be specific. "The Cyfrin course" is not a resource; "Blockchain Basics, The
 Oracle Problem" is. List 3-5.
 
-[List your resources]
+Blockchain Basics course on Cyfrin Updraft
+Solidity Smart Contract Developer course on Cyfrin Updraft
+Google Gemini Guided learning Application
 
 ---
 
@@ -123,12 +125,15 @@ Oracle Problem" is. List 3-5.
 - How you got unstuck
 - What you know now that you did not this morning
 
-[Write down your challenges]
+The biggest thing i got stuck on was the code implementation section of this assessment, the level is way more advanced than i anticipated and the reality is without 
+prior learning there is no way for me to get unstuck unless i retreat and continue cultivating. in short, i didn't get unstuck. I now know the importance of advanced
+Solidity concepts in writing robust smart contracts.
 
 ---
 
 ### What I'd Learn Next
 
-[Write your future learning goals]
+My future learning goals are to expand my knowledge on advanced Solidity concepts to position me as a better Solidity Smart Contract Developer by finishing the courses
+i enrolled to on Cyfrin Updraft. To be specific to complete all 3 Solidity smart contract developer courses.
 
 ---
