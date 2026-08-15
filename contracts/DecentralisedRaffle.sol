@@ -38,6 +38,14 @@ contract DecentralisedRaffle {
     //   address simply appears more than once, which gives them better odds.
     // - You also need the number of UNIQUE players, for the 3-player minimum.
     // - The pot is just this contract's balance.
+    struct Raffle {
+        address owner;
+        uint256 raffleId;
+    }
+    // create a struct to store all records
+
+    // mapping Raffle[owner] => raffleId;
+    
 
     constructor() {
         owner = msg.sender;
