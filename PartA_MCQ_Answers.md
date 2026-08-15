@@ -56,11 +56,10 @@ database?"*
 - **D)** "Because a database can only handle a few thousand users, and
   blockchains scale infinitely."
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** B
 
 **Your Reasoning:**
-[2-3 sentences. What is the actual property a blockchain provides here? Name one
-honest cost of choosing it.]
+Blockchain is decentralized by nature and thus allows for full transparency, no single party controls the servers and participants get to vote on changes. Blockchain also offers a high level of security which the group stands to benefit from.
 
 ---
 
@@ -79,16 +78,15 @@ You send a simple ETH transfer on Ethereum.
 - **C)** 0.00042 ETH (about $1.26)
 - **D)** 0.0042 ETH (about $12.60)
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** C
 
 **Your Calculation:**
 
-- Total gas cost in gwei = [show your working]
-- Converted to ETH (remember: 1 ETH = 1,000,000,000 gwei) = [show your working]
-- Converted to USD = [show your working]
+- Total gas cost in gwei = 21000 * 20
+- Converted to ETH (remember: 1 ETH = 1,000,000,000 gwei) = 420000/1000000000
+- Converted to USD = 0.00042 * 3000
 
-[Then, in one or two sentences: why does a smart contract function that writes
-to storage cost far more than this simple transfer?]
+A smart contract function that writes to storage costs far more than this simple transfer because storage(functionality) is seen as a transaction on the blockchain, as data is written and/or accessed on the blockchain the actions are transactions.
 
 ---
 
@@ -109,12 +107,10 @@ Your smart contract needs to know the current ETH/USD price.
   in a future upgrade.
 - **D)** Because API providers block blockchain nodes for security reasons.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** B
 
 **Your Reasoning:**
-[2-3 sentences. Why would a single company running the only oracle undermine the
-point of building on a blockchain? What does a decentralised oracle network do
-about that?]
+A single company running the only oracle undermines the point of building on a blockchain because it creates centralization(which risks manipulation), the whole premise of Blockchain is decentralization and a decentralized oracle network addresses this problem by pulling data from multiple verifiable sources and aggregating data.
 
 ---
 
@@ -133,11 +129,10 @@ about that?]
   attacker their own stake. The cost of that stake is also what makes Sybil
   attacks - one actor spinning up thousands of fake nodes - uneconomic.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** D
 
 **Your Reasoning:**
-[2-3 sentences. What does an attacker actually need to acquire to threaten a PoS
-chain, and what do they stand to lose? Name one difference from Proof of Work.]
+An attacker needs finacial leverage to use to stake(ETH) and run(own) multiple nodes, the number of nodes the attacker needs to control should be above 51% and should they be discovered, they stand to lose the staked ETH. The difference between a PoS chain and a Proof of Work is that a PoS chain requires a node runner to stake ETH and a Proof of Work requires node runner to have large compute power(energy).
 
 ---
 
@@ -157,11 +152,10 @@ chain, and what do they stand to lose? Name one difference from Proof of Work.]
 - **D)** It reduces gas costs by lowering the base fee on Ethereum itself
   whenever the rollup is active.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** A
 
 **Your Reasoning:**
-[2-3 sentences. Most rollups today run a single centralised sequencer. What can
-that sequencer do to you, and what can it *not* do?]
+The sequencer can help reduce transaction costs but also delay my transactions as they have to be bundled up with other transactions. The sequencer cannot speed up the process.
 
 ---
 
@@ -184,11 +178,10 @@ them.
 - **D)** The seed phrase is just a backup of your public address, which is why it
   is safe to share with support staff if you get stuck.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** B
 
 **Your Reasoning:**
-[2-3 sentences. What does a signature prove? What is the trade-off a user accepts
-by holding their own keys, and what does account abstraction do to soften it?]
+Your seed phrase derives your private key, and your private key produces signatures that only your address can produce. That signature is how a contract knows a transaction is really from you, without anyone needing to approve it. By holding their own keys, the user accepts that they are fully responsible for the safe-keeping of their own keys. Account abstraction allows for easier management of the account by enabling functionality like account recovery(blockchain-based and multi-signature).
 
 ---
 
@@ -223,7 +216,7 @@ uint256 index = uint256(
 - **D)** It is insecure on Ethereum but safe on a Layer 2, because the sequencer
   orders transactions privately.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** B
 
 **Your Reasoning:**
 [2-3 sentences. Who specifically can manipulate this draw, and what would they
@@ -262,7 +255,7 @@ function approveAndPay(uint256 bountyId, address freelancer) external {
 - **D)** The `require` on `msg.sender` should use `tx.origin` instead, so that
   contracts cannot call the function at all.
 
-**Your Answer:** [A/B/C/D]
+**Your Answer:** D
 
 **Your Reasoning:**
 [2-3 sentences. Walk through the exact sequence an attacking contract would use.
@@ -279,5 +272,4 @@ Then apply the fix in your own `approveAndPay` - it is auto-marked.]
 
 ---
 
-**Challenges faced:** [What was difficult? Which concepts are you least
-confident about? Answering this honestly does not cost you marks.]
+**Challenges faced:** Interpretation of code is still a challenge as i am new to Solidity, my development process is largely trial and error for new languages. I am least confident about my answers for part 2 of this section.
