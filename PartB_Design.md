@@ -23,7 +23,8 @@ is finished does not.
   three times the chance of winning?
 - How did you count unique players separately from total entries?
 
-[Write your response here]
+I would use a struct combined with mapping to allow for easier access of the the raffle details, and an Array to store the different raffles(structs).
+The use of structs allows details like the raffle owner and id to be bundled together, thus providing for multiple entries per user.
 
 ---
 
