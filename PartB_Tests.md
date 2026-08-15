@@ -28,7 +28,7 @@ npx hardhat test
 - **What it checks:**
 - **Steps:**
 - **Expected result:**
-- **Does it pass?** [yes / no / partly]
+- **Does it pass?** no
 
 ### 1.2 A scenario I did NOT have time to test
 
@@ -61,7 +61,7 @@ assert that is true no matter who wins?
 it is in `grading/tests/DecentralisedRaffle.grading.test.js` and you are welcome
 to read it.)
 
-[Write your response here]
+I would test the randomness of the function, by that i mean to ensure that the function returns a different output for the same input on multiple runs.
 
 ---
 
@@ -70,15 +70,15 @@ to read it.)
 Pick **one** of your two contracts. If you wanted to steal from it or break it,
 what would you try first?
 
-- **Contract:**
+- **Contract:** DecentralisedRaffle
 - **My attack:**
-- **Does it work against my implementation?** [yes / no / not sure]
+- **Does it work against my implementation?** not sure
 - **If it works, what would fix it?**
 
 An honest "yes, this attack works against my code, and here is the fix" scores
 full marks here. Claiming your contract is perfect scores nothing.
 
-[Write your response here]
+I would try to recreate the raffleId or get access to the contract address.
 
 ---
 
