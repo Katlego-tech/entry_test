@@ -53,7 +53,7 @@ contract FreelanceBountyBoard {
     // - Revert if the skill string is empty
     // - Emit FreelancerRegistered(msg.sender, skill)
     function registerFreelancer(string calldata skill) external {
-        // Your implementation here
+        
     }
 
     // -----------------------------------------------------------------------
@@ -121,7 +121,14 @@ contract FreelanceBountyBoard {
     //     require(ok, "Transfer failed");
     // rather than transfer() or send().
     function approveAndPay(uint256 bountyId, address freelancer) external {
-        // Your implementation here
+    //     Bounty storage public b = bounties[bountyId];
+    //     require(msg.sender == b.employer, "Not the employer");
+
+    //     (bool ok, ) = freelancer.call{value: b.amount}("");
+    //     require(ok, "Transfer failed");
+
+    //     b.status = Status.Completed;
+    // }
     }
 
     // -----------------------------------------------------------------------
